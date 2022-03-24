@@ -19,4 +19,4 @@ spec:
   - help: "Return dataframe"
     human_name: "Dataframe with labels"
     name: df
-    type: dataframe
+    type: file
