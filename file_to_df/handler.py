@@ -1,7 +1,7 @@
 import pandas as pd
 
 def handle(req) :
-    filename = req("file")
+    filename = req["file"]
     df = pd.read_csv(filename)
     df = df[['Description', 'Categorie 2']]
     df = df[df['Categorie 2'].notna()]
