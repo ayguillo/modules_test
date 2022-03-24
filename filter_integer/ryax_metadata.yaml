@@ -1,0 +1,32 @@
+apiVersion: "ryax.tech/v1"
+kind: Functions
+spec:
+  id: filter-integer
+  human_name: Filter integer
+  type: python3
+  version: "1.1"
+  logo: "logo.png"
+  detail: "Compare 2 integers. If the comparison fails, no further executions are started."
+  categories:
+  - Processor
+  - Filter
+  - Default Modules
+  inputs:
+  - help: "First value. Value to be compared"
+    human_name: "First value"
+    name: first
+    type: integer
+  - help: "If the first value OPERATION than second value, then do not filter"
+    human_name: "Operation"
+    name: operation
+    type: enum
+    default_value: equal
+    enum_values:
+    - equal
+    - greater
+    - lower
+  - help: "Second value. Value to compare"
+    human_name: "Second value"
+    name: second
+    type: integer
+  outputs: []
