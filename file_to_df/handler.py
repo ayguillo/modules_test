@@ -9,5 +9,5 @@ def handle(req) :
     df['Description'] = df['Description'].str.lower()
     df['Categorie 2'] = df['Categorie 2'].str.lower()
     return {
-        "dataframe" : df.to_csv()
+        "df" : df.to_csv()
     }

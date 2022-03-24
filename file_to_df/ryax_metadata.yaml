@@ -4,7 +4,7 @@ spec:
   id: test-pandas
   human_name: Test pandas
   type: python3
-  version: "1.1"
+  version: "0.1"
   logo: "pandas.png"
   detail: "Pandas test"
   categories:
