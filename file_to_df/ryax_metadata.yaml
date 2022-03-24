@@ -4,29 +4,15 @@ spec:
   id: test-pandas
   human_name: Test pandas
   type: python3
-  version: "1.1"
+  version: "1.0"
   logo: "pandas.png"
   detail: "Pandas test"
   categories:
   - Processor
-  - Filter
-  - Default Modules
+  - Pandas
   inputs:
-  - help: "First value. Value to be compared"
-    human_name: "First value"
-    name: first
-    type: integer
-  - help: "If the first value OPERATION than second value, then do not filter"
-    human_name: "Operation"
-    name: operation
-    type: enum
-    default_value: equal
-    enum_values:
-    - equal
-    - greater
-    - lower
-  - help: "Second value. Value to compare"
-    human_name: "Second value"
-    name: second
-    type: integer
+  - help: "Training File"
+    human_name: "Training File with labels"
+    name: file
+    type: file
   outputs: []
